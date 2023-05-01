@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&family=Roboto:ital,wght@0,300;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/06a5ad5971.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/LogoMakr-3dGOVZ.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="packages.html">PACKAGES</a></li>
+                    <li><a href="contact.html">CONTACT-US</a></li>
+                    <li><a href="about.html">ABOUT-US</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>packages</h1>
+
+    <section class="package">
+        <h1>Our Available Destinations</h1>
+        <div class="package-content">
+            <div class="package-col">
+                <img src="images/toky.jpg" alt="">
+                <h4>Tokyo</h4>
+                <p>japan $1500</p>
+            </div>
+
+            <div class="package-col">
+                <img src="images/rome.webp" alt="">
+                <h4>Rome</h4>
+                <p>italy $700</p>
+            </div>
+
+            <div class="package-col">
+                <img src="images/paris.png" alt="">
+                <h4>paris</h4>
+                <p>France $1000</p>
+            </div>
+
+            <div class="package-col">
+                <img src="images/turkey.jpg" alt="">
+                <h4>istanbul</h4>
+                <p>turkey $800</p>
+            </div>
+
+            <div class="package-col">
+                <img src="images/london.jpg" alt="">
+                <h4>london</h4>
+                <p>England $500</p>
+            </div>
+
+            <div class="package-col">
+                <img src="images/maldives.webp" alt="">
+                <h4>maldives</h4>
+                <p>Asia $20,000</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="comment">
+
+        <h3>leave a comment</h3>
+        <form class="comment-form">
+            <input type="text" placeholder="Enter Name">
+            <input type="text" placeholder="Enter Email">
+            <textarea rows="5" placeholder="Your comment"></textarea>
+            <button type="submit" class="hero-btn  red-btn">POST COMMENT</button>
+        </form>
+
+    </section>
+        
+
+        <!-- click now -->
+        <footer class="down">
+            <h4>About Us</h4>
+            <p>Travel waves is a top class,professional travel agency that can get you a visa at various countries at your choice
+                we offer fixed prices,speedy services <br> and more advantages to our clients we are safe and professional trust travel wave
+            </p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <p>made by<i class="fa-solid fa-face-smile-horns"></i>Chebem Nzom</p>
+         </footer>
+
+
+
+               <!---------javascript for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script> 
+
+    
+</body>
+</html>
